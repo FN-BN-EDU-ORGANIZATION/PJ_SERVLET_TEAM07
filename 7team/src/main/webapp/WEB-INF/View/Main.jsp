@@ -24,6 +24,7 @@
             <div class="head">
                 <div class="head_bar">
                     <div class="head_member">
+                    <!-- 로그인, 로그아웃, 회원가입 구현 성공 -->
                     	<c:if test="${empty ROLE }">
                         <div><a href="${pageContext.request.contextPath }/Join.do">회원가입</a></div>
                         </c:if>
