@@ -52,7 +52,9 @@ public class FrontController extends HttpServlet {
 		
 		//member.auth
 		map.put(projectPath+"/login.do", new LoginController());
-		map.put(projectPath+"/member/auth/logout.do", new LogoutController());
+		map.put(projectPath+"/logout.do", new LogoutController());
+		
+		//로그인 로그아웃 구현함!-다은
 		
 		//main
 		map.put(projectPath+"/main.do", new MainController());
