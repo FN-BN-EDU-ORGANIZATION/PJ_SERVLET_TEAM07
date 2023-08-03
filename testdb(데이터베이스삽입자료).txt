@@ -1,0 +1,19 @@
+drop database if exists testdb;
+create database testdb;
+
+use testdb;
+
+create table tbl_member(
+	id varchar(45) primary key,
+	pwd varchar(45),
+	name varchar(45),
+	email varchar(45),
+	joinDate date
+)
+
+
+insert into tbl_member(id, pwd, name, email, joinDate) values('user1', 'password1', 'kimminsu','kim@exam.com','2023-8-3');
+insert into tbl_member(id, pwd, name, email, joinDate) values('user2', 'password2', 'imminsu','im@exam.com','2023-8-3');
+insert into tbl_member(id, pwd, name, email, joinDate) values('user3', 'password3', 'simminsu','sim@exam.com','2023-8-3');
+insert into tbl_member(id, pwd, name, email, joinDate) values('user4', 'password4', 'uimminsu','uim@exam.com','2023-8-3');
+insert into tbl_member(id, pwd, name, email, joinDate) values('user5', 'password5', 'gimminsu','gim@exam.com','2023-8-3');

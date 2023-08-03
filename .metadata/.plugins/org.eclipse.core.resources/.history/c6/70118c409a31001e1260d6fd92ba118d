@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/mem.do" method="get">
+		<input type="submit" value="모든회원검색" id="get">
+		<script>
+			const get_button=document.getElementById("get");
+			get_button.addEventListener("click", function(){
+				window.location.href="./webapp/member/listmember.jsp"
+			})
+		</script>
+	</form>
+</body>
+</html>
