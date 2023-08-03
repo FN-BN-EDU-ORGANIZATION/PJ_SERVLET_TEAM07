@@ -26,6 +26,7 @@ public class MemberInsertController implements SubController {
 					return ;
 				}
 				
+				//회원가입 구현 성공! -주현
 				// POST 요청 처리
 				// 1 파라미터 추출
 				String id = (String) req.getParameter("id");
