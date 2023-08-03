@@ -27,19 +27,18 @@
                     	<c:if test="${empty ROLE }">
                         <div><a href="${pageContext.request.contextPath }/Join.do">회원가입</a></div>
                         </c:if>
+                        <c:if test="${not empty ROLE }">
+                        <div><a href="${pageContext.request.contextPath }/delete.do">회원탈퇴</a></div>
+                        </c:if>
                         <div><a href="#">통합회원인증</a></div>
-                        <%
-                        	Integer rolevalue = (Integer)session.getAttribute("ROLE");
-                        	if(rolevalue==null)
-                        	{
-                        
-                        %>
-                        <div><a href="${pageContext.request.contextPath }/login.do">통합허브시스템 로그인</a></div>
-                        <%
-                        	}
-                        %>
-                    </div>
-                </div>
+						<c:if test="${empty ROLE }">
+	                    <div><a href="${pageContext.request.contextPath }/login.do">통합허브시스템 로그인</a></div>
+	                    </c:if>
+	                    <c:if test="${not empty ROLE }">
+	                    <div><a href="${pageContext.request.contextPath }/logout.do">통합허브시스템 로그아웃</a></div>
+	                    </c:if> 
+	                    </div>
+                   </div>
                 <div class="head_search">
                     <div class="logo">
                         <a href=""><img src="resources/img/logo.png" alt="로고이미지"></a>
