@@ -1,0 +1,115 @@
+#footer>.footer_bottom {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.footer_bottom>.tedory {
+    width: 1260px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.footer_bottom>.tedory>.dosu_site {
+    width: 1260px;
+    height: 120px;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.footer_bottom>.tedory>.dosu_site div {
+    width: 120px;
+    height: 80px;
+    border: 1px solid gray;
+}
+
+.footer_bottom>.tedory>.dosu_nav {
+    width: 1260px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E9E9E9;
+    border-bottom: 1px solid white;
+}
+
+.footer_bottom>.tedory>.dosu_nav div {
+    margin-top: 25px;
+    position: relative;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color:black;
+    position: absolute;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(1):before {
+    display: none;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(2):before {
+    left: -45px;
+    top: 5px;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(3):before {
+    left: -45px;
+    top: 5px;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(4):before {
+    left: -45px;
+    top: 5px;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(5):before {
+    left: -45px;
+    top: 5px;
+}
+
+.footer_bottom>.tedory>.dosu_nav div:nth-child(6):before {
+    left: -45px;
+    top: 5px;
+}
+
+.footer_bottom>.tedory>.dosu_last {
+    width: 1260px;
+    height: 200px;
+    background-color: #E9E9E9;
+    display: flex;
+}
+
+.footer_bottom>.tedory>.dosu_last>.left {
+    width: 630px;
+    height: 150px;
+    background-color: #E9E9E9;
+    display: flex;
+    /* align-items: ce;  */
+    padding-left: 50px;
+    padding-top: 30px;
+
+}
+
+.footer_bottom>.tedory>.dosu_last>.right {
+    width: 630px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_bottom>.tedory>.dosu_last>div {
+    width: 310px;
+    height: 200px;
+
+}
+
+.footer_bottom>.tedory>.dosu_last>div form {
+    display: flex;
+}

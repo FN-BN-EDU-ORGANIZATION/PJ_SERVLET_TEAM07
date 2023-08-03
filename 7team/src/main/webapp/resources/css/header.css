@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 여기까지 .head 둘째줄 <수정할 사항: dep1의 padding값을 주면서 화면상 마우스의 움직임에 따라 hover가 중단됨.> */
+#header>.head {
+    width: 100%;
+    height: 150px;
+}
+
+#header>.head>.head_bar {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#header>.head>.head_bar>.head_member {
+    margin-right: 10px;
+}
+
+#header>.head>.head_bar>.head_member>div>a {
+    font-size: 14px;
+}
+
+#header>.head>.head_bar>.head_member div {
+    margin-top: 12px;
+    margin-right: 20px;
+    float: right;
+    position: relative;
+}
+
+#header>.head>.head_bar>.head_member div:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+}
+
+#header>.head>.head_bar>.head_member>div:first-child:before {
+    left: -12px;
+    top: 5px;
+}
+
+#header>.head>.head_bar>.head_member>div:nth-child(2):before {
+    left: -12px;
+    top: 5px;
+}
+
+#header>.head>.head_bar>.head_member>div:nth-child(3):before {
+    display: none;
+}
+
+/* 여기까지 .head 첫째줄 */
+
+#header>.head>.head_search {
+    width: 1260px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+}
+
+#header>.head>.head_search>.nav {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header>.head>.head_search>.logo {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#header>.head>.head_search>.logo>a>img {
+    width: 140px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.head_search>.nav>.dep1 {
+    position: relative;
+    font-size: 18px;
+}
+
+.head_search>.nav>.dep1>.dep2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding-top: 15px;
+    transform: translateX(-50%);
+    display: none;
+    width: clac(100% - 50px);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.head_search .nav>li:hover>.dep2 {
+    display: flex;
+
+}
+
+.head_search>.nav>.dep1 .dep2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+.head_search>.nav>.dep1 .dep2 li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+.menubar>a>img {
+    width: 40px;
+    height: 40px;
+}
+
+#header>.subject {
+    width: 100%;
+    height: 400px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#header>.subject>.context_box {
+    width: 990px;
+    height: 130px;
+    /* background-color: aliceblue; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#header>.subject>.context_box>.c_box1 {
+    width: 990px;
+    height: 50px;
+    /* background-color: burlywood; */
+    font-size: 40px;
+    font-family: 'LOTTERIACHAB';
+}
+
+#header>.subject>.context_box>.c_box2 {
+    width: 990px;
+    height: 80px;
+    /* background-color: cornflowerblue; */
+    font-size: 50px;
+    font-family: 'LOTTERIACHAB';
+
+}
+
+#header>.search {
+    width: 100%;
+    height: 50px;
+    /* background-color: blueviolet; */
+}
+
+#header>.search>.search_click {
+    width: 990px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#header>.search>.search_click>input:first-child {
+    width: 500px;
+    height: 50px;
+}
+
+#header>.search>.search_click>input:last-child {
+    width: 80px;
+    height: 50px;
+}
+
+#header>.bin1 {
+    width: 100%;
+    height: 200px;
+    /* background-color: brown; */
+}
+
+#header>.ancle {
+    width: 100%;
+    height: 100px;
+    /* background-color: burlywood; */
+}
+
+.ancle>.ancle_contents {
+    width: 990px;
+    height: 100px;
+    /* background-color: beige; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ancle>.ancle_contents div {
+    width: 100px;
+    height: 100px;
+    ;
+    /* border: 1px solid gray; */
+    border-radius: 100%;
+}
+
+#header>.bin2 {
+    width: 100%;
+    height: 150px;
+    /* background-color: cadetblue; */
+
+}
