@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,9 +24,20 @@
             <div class="head">
                 <div class="head_bar">
                     <div class="head_member">
+                    	<c:if test="${empty ROLE }">
                         <div><a href="${pageContext.request.contextPath }/Join.do">회원가입</a></div>
+                        </c:if>
                         <div><a href="#">통합회원인증</a></div>
+                        <%
+                        	Integer rolevalue = (Integer)session.getAttribute("ROLE");
+                        	if(rolevalue==null)
+                        	{
+                        
+                        %>
                         <div><a href="${pageContext.request.contextPath }/login.do">통합허브시스템 로그인</a></div>
+                        <%
+                        	}
+                        %>
                     </div>
                 </div>
                 <div class="head_search">

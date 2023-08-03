@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>회원가입</h1>
-	<form action="${pageContext.request.contextPath}/Join.do" method="post" onsubmit="return false">
+	<form action="${pageContext.request.contextPath}/Join.do" method="post" >
 	ID : <input name="id" /><br />
 	PW : <input type="password" name="pw" /><br />
 	NAME : <input name="name" /><br />
