@@ -19,7 +19,7 @@ PW : <input name = "pw" type="password" /><br />
 </form>
 <hr />
 
-<div class="msg">
+<div class="msg"> 
 	${msg}
 </div>
 

@@ -28,6 +28,8 @@ public interface MemberService {
 	//로그아웃
 	boolean logout(HttpServletRequest req) throws Exception;
 
+	Boolean memberDelete(HttpServletRequest req);
+
 	
 
 }
