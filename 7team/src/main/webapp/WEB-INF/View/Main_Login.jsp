@@ -15,7 +15,7 @@
 ID : <input name="id" /><br />
 PW : <input name = "pw" type="password" /><br />
 <input type="submit" value="login" />
-<a href="">회원가입</a>
+<a href="${pageContext.request.contextPath }/Join.do">회원가입</a>
 </form>
 <hr />
 

@@ -53,6 +53,8 @@ public class LoginController implements SubController {
 			}
 			// 3 서비스 실행
 			boolean isLogin = false;
+			req.setAttribute("id", id);
+			req.setAttribute("pw", pw);
 
 			isLogin = service.login(req);
 

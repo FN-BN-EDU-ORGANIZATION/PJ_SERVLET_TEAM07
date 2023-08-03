@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>회원가입</h1>
-	<div>
+	<form action="${pageContext.request.contextPath}/Join.do" method="post" onsubmit="return false">
 	ID : <input name="id" /><br />
 	PW : <input type="password" name="pw" /><br />
 	NAME : <input name="name" /><br />
@@ -16,7 +16,20 @@
 	ADDRESS : <input name="addr" /><br />
 	Role : <input type="radio" name="role" value="member" checked="chedked"/>
 		   <input type="radio" name="role" value="admin"/><br />
-	<input type="submit" name="가입하기"/><a href="">뒤로가기</a>
-	</div>
+	<input type="submit" name="가입하기" onclick="isValid()"/><a href="javascript:history.go(-1)">뒤로가기</a>
+	</form>
+	
+	<script defer>
+	/* 자바스크립트 수준의 유효성 체크  */
+	const isValid=function(){
+		const joinfrm = document.joinfrm;
+		//alert("[JS] func isValid");
+		//email 공백여부 등 Validation Check
+
+		joinfrm.submit();
+	}
+</script>
+
+
 </body>
 </html>

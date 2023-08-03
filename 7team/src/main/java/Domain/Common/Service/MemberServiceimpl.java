@@ -127,7 +127,7 @@ public class MemberServiceimpl implements MemberService {
 //	}
 	@Override
 	public boolean login(HttpServletRequest req) throws Exception {
-		String member_id = (String) req.getParameter("member_id");
+		String member_id = (String) req.getParameter("id");
 		String pw = (String) req.getParameter("pw");
 		MemberDto dbDto = dao.select2(member_id);
 		if (dbDto == null) {

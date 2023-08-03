@@ -35,7 +35,7 @@ public class MemberInsertController implements SubController {
 				
 					// 2 입력값 검증
 					if (!isValid(req.getParameterMap())) {
-						req.setAttribute("msg", "");
+						req.setAttribute("msg", "유효성체크 오류");
 						req.getRequestDispatcher("/WEB-INF/View/Join.jsp").forward(req, resp);
 						return;
 					}
@@ -64,7 +64,7 @@ public class MemberInsertController implements SubController {
 
 	private boolean isValid(Map<String, String[]> parameterMap) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 }
 

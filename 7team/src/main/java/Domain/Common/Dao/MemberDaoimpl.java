@@ -47,14 +47,15 @@ public class MemberDaoimpl extends ConnectionPool implements MemberDao {
 	public MemberDto select2(String id) throws Exception{
 		List<MemberDto> list = new ArrayList();
 		MemberDto dto = null;
-		pstmt = conn.prepareStatement("select * from tbl_member where name like '%"+ id +"%'" );
+		pstmt = conn.prepareStatement("select * from tbl_member where member_id=?" );
+		pstmt.setString(1, id);
 		rs=pstmt.executeQuery();
 		if(rs!=null) {
 			rs.next();
 				dto = new MemberDto();
-				dto.setId(rs.getString("id"));
+				dto.setId(rs.getString("member_id"));
 				dto.setPw(rs.getString("pw"));
-				dto.setName(rs.getString("name"));
+				dto.setName(rs.getString("member_name"));
 //				dto.setTel(rs.getString("tel"));
 //				dto.setAddr(rs.getString("addr"));
 				dto.setRole(rs.getInt("role"));
