@@ -68,6 +68,7 @@ public class MemberServiceimpl implements MemberService {
 		return false;
 	}
 
+	// 회원 탈퇴하기 -정재원
 	@Override
 	public boolean deleteMember(String id) throws Exception {
 		System.out.println("회원탈퇴 서비스");
@@ -164,5 +165,14 @@ public class MemberServiceimpl implements MemberService {
 	public String getRole(String sid) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public Boolean memberDelete(String id) throws Exception {
+		int result = dao.delete(id);
+		if(result>0) {
+			return true;
+		}
+		return false;
 	}
 }

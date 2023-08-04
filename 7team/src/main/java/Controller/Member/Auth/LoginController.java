@@ -1,11 +1,11 @@
 package Controller.Member.Auth;
 
 import java.io.IOException;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import Controller.SubController;
 import Domain.Common.Service.MemberService;
@@ -60,6 +60,10 @@ public class LoginController implements SubController {
 
 			// 4 View로 전달
 			if (isLogin) {
+				// 로그인 성공 시 세션에 "member_id" 값을 저장
+			    HttpSession session = req.getSession();
+			    session.setAttribute("member_id", id); // 여기서 id는 로그인된 사용자의 ID 값
+			    
 				// main.do 이동 - Redirect
 				resp.sendRedirect(req.getContextPath() + "/main.do");
 			} else {

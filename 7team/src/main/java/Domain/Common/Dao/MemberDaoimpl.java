@@ -89,9 +89,15 @@ public class MemberDaoimpl extends ConnectionPool implements MemberDao {
 		pstmt.close();
 		return result;
 	}
+	//회원탈퇴하기 - 정재원
 	@Override
 	public int delete(String id)  throws Exception{
-		pstmt=conn.prepareStatement("delete from tbl_booklist where bookcode like '%"+ id +"%'" );
+		if(id==null|| id.isEmpty()) {
+			System.out.println("유효하지 않은 ID");
+			return 0;
+		}
+		pstmt=conn.prepareStatement("delete from tbl_member where member_id=?" );
+		pstmt.setString(1, id);
 		int result=pstmt.executeUpdate();
 		pstmt.close();
 		return result;

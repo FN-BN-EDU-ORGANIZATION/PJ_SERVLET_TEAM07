@@ -18,11 +18,12 @@ public class LogoutController implements SubController {
 	public void execute(HttpServletRequest req, HttpServletResponse resp) {
 		try {
 			HttpSession session = req.getSession();
-			session.invalidate();
+			session.invalidate();// 세션 무효화
 			resp.sendRedirect(req.getContextPath()+"/main.do");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			
 		}
 		
 	}

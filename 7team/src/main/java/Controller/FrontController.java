@@ -48,11 +48,11 @@ public class FrontController extends HttpServlet {
 		map.put(projectPath+"/member/select2.do", new MemberSelect2Controller());
 		map.put(projectPath+"/Join.do", new MemberInsertController());				//회원가입페이지이동
 		map.put(projectPath+"/member/update.do", new MemberUpdateController());
-		map.put(projectPath+"/member/delete.do", new MemberDeleteController());		//회원탈퇴
+		map.put(projectPath+"/delete.do", new MemberDeleteController());		//회원탈퇴
 		
 		//member.auth
 		map.put(projectPath+"/login.do", new LoginController());					//로그인페이지이동
-		map.put(projectPath+"/member/auth/logout.do", new LogoutController());		//로그아웃
+		map.put(projectPath+"/logout.do", new LogoutController());		//로그아웃
 		
 		//main
 		map.put(projectPath+"/main.do", new MainController());						//메인페이지

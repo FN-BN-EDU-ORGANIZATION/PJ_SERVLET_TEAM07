@@ -13,9 +13,9 @@
 			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/82107/Desktop/PJ_SERVLET_TEAM07/src/main/webapp/WEB-INF/lib/jackson-annotations-2.15.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/82107/Desktop/PJ_SERVLET_TEAM07/src/main/webapp/WEB-INF/lib/jackson-core-2.15.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/82107/Desktop/PJ_SERVLET_TEAM07/src/main/webapp/WEB-INF/lib/jackson-databind-2.15.2.jar"/>
-	<classpathentry kind="lib" path="C:/mysql_m/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Downloads/jackson-annotations-2.15.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Downloads/jackson-core-2.15.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Downloads/jackson-databind-2.15.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/mysql-connector-j-8.0.33.zip"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

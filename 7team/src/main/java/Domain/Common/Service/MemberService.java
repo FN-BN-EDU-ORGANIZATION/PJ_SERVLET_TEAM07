@@ -18,17 +18,18 @@ public interface MemberService {
 
 	boolean deleteMember(String member_id) throws Exception;
 
-	//로그인
+	//로그인 - 구현성공
 	boolean login(HttpServletRequest req) throws Exception;
 
 
 	//역할반환함수 
 	String getRole(String sid);
 
-	//로그아웃
+	//로그아웃 - 구현 성공
 	boolean logout(HttpServletRequest req) throws Exception;
 
-	Boolean memberDelete(HttpServletRequest req);
+	// 회원탈퇴 - 
+	Boolean memberDelete(String id) throws Exception;
 
 	
 
